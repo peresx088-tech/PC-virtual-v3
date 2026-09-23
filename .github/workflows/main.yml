@@ -177,16 +177,16 @@ jobs:
           Write-Host "║  Password: $env:RDP_PASSWORD"
           Write-Host "╠══════════════════════════════════════════════════╣" -ForegroundColor Cyan
           Write-Host "║  STORAGE                                         ║" -ForegroundColor Cyan
-          Write-Host "║  C: ~500GB (sistema)                              ║"
-          Write-Host "║  D: ~70GB (runner disk)                          ║"
-          Write-Host "║  E: ~100GB (VHD extra)                           ║"
+          Write-Host "║  C: ~250GB (sistema)                              ║"
+          Write-Host "║  D: ~250GB (runner disk)                          ║"
+          Write-Host "║  E: ~256GB (VHD extra)                           ║"
           Write-Host "╚══════════════════════════════════════════════════╝" -ForegroundColor Cyan
           Write-Host ""
 
           # Mantener la sesión activa
           $i = 0
           while ($true) {
-            Start-Sleep -Seconds 60
+            Start-Sleep -Seconds 5
             $i++
             Write-Host "Keep alive... ($i minutos)" -ForegroundColor DarkGray
           }
